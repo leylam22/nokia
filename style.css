@@ -1,0 +1,679 @@
+*{
+    box-sizing: border-box;
+    font-family: NokiaPureHeadline,Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+html, body {
+    overflow-x: hidden;
+  }
+  
+
+.nav-1{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0% 5px 77%;
+    background-color: rgb(211, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-1 ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.nav-1 a{
+    text-decoration: none;
+    color: rgba(40, 39, 39, 0.781);
+}
+.nav-1 a:hover{
+    color: black;
+    text-decoration: underline blue;
+}
+.nav-2 {
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 70px;
+    margin-right: 220px;
+    width: 157px;
+    height: auto;
+}
+
+.nav-2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.nav-2 ul li {
+    margin-left: 30px;
+}
+
+.nav-2 ul li a {
+    color: #0067edc0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:500;
+}
+
+.nav-2 ul li a:hover {
+    color: #1b5db3;
+}
+
+.nav-2 > i{
+    padding: 15px;
+    font-size: x-large;
+}
+
+.fone{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    height:600px;
+}
+.fone > h1{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    font-weight:300;
+    font-size:70px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+}
+.fone > p{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    margin-top: 24px;
+    font-size: 32px;
+    line-height: 130%;
+}
+.fone > .hdr{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: 0.54px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 1px #005AFF;
+    background-color: #005AFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.fone > .hdr:hover{
+    background-color: #00269a;
+    border: solid 1px #00269a;
+}
+
+.icon-prev{
+    position: absolute;
+    border:solid 2px rgb(252, 252, 252);
+    background-color: #ffffffa0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 74%;
+    left: 6%;
+    cursor: pointer;
+    color: #e8e4e4da;
+}
+
+.icon-next{
+    position: absolute;
+    border:solid 2px rgb(252, 252, 252);
+    background-color: #ffffffa0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 74%;
+    left: 12%;
+    cursor: pointer;
+    color: #e8e4e4da;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        top: 15%;
+        width: 120%;
+        height: 80%;
+        object-fit: cover;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        top: 15%;
+        width: auto;
+        height: 100%;
+    }
+} 
+
+.photo-1{
+    position: absolute;
+    top: 95%;
+    right: -27%;
+    left: 50%;
+}
+.photo-1 > img{
+    width: 65%;
+}
+.txt-1{
+    position: absolute;
+    top: 127%;
+    left: 6%;
+}
+.txt-1 > h2{
+    font-weight:300;
+    font-size:55px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+    margin-bottom: 20px;
+}
+
+.txt-1 > p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    letter-spacing: 0.54px;
+    font-size: 18px;
+    color: #1d1e20;
+    display: block;
+}
+
+.txt-1 > button{
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: 0.54px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    border: solid 1px #005AFF;
+    background-color: #005AFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.txt-1 > button:hover{
+    background-color: #00269a;
+    border: solid 1px #00269a;
+}
+
+.txt-2{
+    position: absolute;
+    top: 227%;
+    left: 57%;
+}
+
+.txt-2 > h2{
+    font-weight:300;
+    font-size:55px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+    margin-bottom: 20px;
+}
+
+.txt-2 > p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    letter-spacing: 0.54px;
+    font-size: 18px;
+    color: #1d1e20;
+    display: block;
+}
+
+.txt-2 > button{
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: 0.54px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    border: solid 1px #005AFF;
+    background-color: #005AFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.txt-2 > button:hover{
+    background-color: #00269a;
+    border: solid 1px #00269a;
+}
+
+.photo-2{
+    position: absolute;
+    top: 197%;
+}
+.photo-2 > img{
+    width: 70%;
+}
+
+.blurry{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 298%;
+    background: rgb(34,193,195);
+background: linear-gradient(187deg, rgba(34,193,195,1) 0%, rgba(231,173,12,1) 90%);
+}
+
+.blurry > h2{
+    font-weight:300;
+    font-size:55px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+.blurry > .icon-prev-b{
+    position: absolute;
+    border:solid 2px rgb(252, 252, 252);
+    background-color: #ffffffa0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 6%;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.blurry > .icon-next-b{
+    position: absolute;
+    border:solid 2px rgb(252, 252, 252);
+    background-color: #ffffffa0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 11%;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.card{
+    position:absolute;
+    top: 335%;
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-1{
+    height: 450px;
+    width: 400px;
+    margin-left: 8%;
+    padding-right: 32px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1px 16px 70px;
+}
+.card-1 > img{
+    object-fit: cover;
+    height: 450px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+#h3c{
+    font-weight:300;
+    font-size:30px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+    margin-bottom: 20px;
+}
+.card-1 > p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    font-size: 16px;
+    color: #1d1e20;
+    display: block;
+}
+.pse{
+    position: absolute;
+    object-fit: cover;
+    top: 420%;
+    width: 100%;
+    height: 70%;
+}
+.pse > h2{
+        color: white;
+        position: absolute;
+        top: 15%;
+        left: 6%;
+        font-weight:300;
+        font-size:70px;
+        line-height: 120%;
+        letter-spacing: 0.18px;
+}
+.pse > p{
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 6%;
+        font-weight: 300;
+        letter-spacing: 0.36px;
+        margin-top: 24px;
+        font-size: 32px;
+        line-height: 130%;
+}
+.pse > .but-fon{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: 0.54px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 1px #005AFF;
+    background-color: #005AFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+.pse > .but-fon:hover{
+    background-color: #00269a;
+    border: solid 1px #00269a;
+}
+.pse > img{
+    width: 100%;
+    height: 100%;
+}
+.big{
+    position: absolute;
+    top: 500%;
+    width: 85%;
+    height: 100%;
+    left: 7%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.big > img{
+    width: 100%;
+    height: 100%;
+}
+.big > h2{
+    color: #1d1e20;
+    vertical-align: middle;
+    font-size: 32px;
+    letter-spacing: 0.36px;
+    line-height: 130%;
+    font-weight: 300;
+}
+.big > p{
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.56px;
+    color: #1d1e20;
+}
+.blurry2{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 620%;
+    background: rgb(4,255,28);
+background: linear-gradient(349deg, rgba(4,255,28,1) 0%, rgba(9,17,126,1) 43%, rgba(0,212,255,1) 92%);
+}
+
+.blurry2 > h2{
+    font-weight:300;
+    font-size:55px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 6%;
+    margin-left: 6%;
+}
+.blurry2 > .icon-prev-b{
+    position: absolute;
+    border:solid 2px rgb(252, 252, 252);
+    background-color: #ffffffa0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 6%;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.blurry2 > .icon-next-b{
+    position: absolute;
+    border:solid 2px rgb(252, 252, 252);
+    background-color: #ffffffa0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 11%;
+    cursor: pointer;
+    color: #ffffff;
+}
+#crt2{
+    top: 660%;
+}
+.last-part{
+    position: absolute;
+    top: 750%;
+}
+.last-part > h3{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    font-weight:300;
+    font-size:50px;
+    line-height: 120%;
+    letter-spacing: 0.18px;
+}
+.last-part > p{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    margin-top: 24px;
+    font-size: 22px;
+    line-height: 130%; 
+}
+.last-but{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: 0.54px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 1px #fff;
+    background-color: #fff;
+    color: #005AFF;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px;
+}
+.last-but:hover{
+    color: #00269a;
+}
+.ftr > .logo-ftr{
+    position: absolute;
+    top: 815%;
+    margin-left: 70px;
+    margin-right: 220px;
+    padding-bottom: 100px;
+    width: 170px;
+    height: auto;
+}
+.divizor{
+    position: absolute;
+    top: 825%;
+    width: 88%;
+    left: 65px;
+    right: 20%;
+    border-top: 2px solid #ccc;
+    margin: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.h6p1{
+    position: absolute;
+    top: 830%;
+    margin-left: 70px;
+}
+.h6p1 > h6{
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.36;
+}
+.h6p1 > p{
+    cursor: pointer;
+    font-weight: 600;
+}
+.nc-7{
+    position: absolute;
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    top: 830%;
+    left: 34%;
+}
+.nc-7 > li{
+    list-style: none;
+    padding-right: 80px;
+    color: #252424c8;
+}
+.nc-7 > p{
+    padding-top: 25px;
+    margin-left: -565px;
+    color: #252424c8;
+}
+.divider2{
+    position: absolute;
+    top: 845%;
+    width: 88%;
+    left: 65px;
+    right: 20%;
+    border-top: 2px solid #ccc;
+    margin: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.nc-8{
+    display: flex;
+    position: absolute;
+    top: 850%;
+    left: 4.3%;
+}
+.nc-8 > h4{
+    padding-right: 40px;
+    color: #005AFF;
+    cursor: pointer;
+}
+.last{
+    border: solid 1px #005AFF;
+    left: 150%;
+    width: 100%;
+    margin-top: -15px;
+    font-size: 20px;
+}
+.last-icons{
+    position: absolute;
+    top: 851%;
+    right: 8%;
+}
+.last-icons > button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff00;
+    margin-right: 15px;
+}
+.divider3{
+    position: absolute;
+    top: 864%;
+    width: 88%;
+    left: 65px;
+    right: 20%;
+    border-top: 2px solid #ccc;
+    margin: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.nl22{
+    position: absolute;
+    top: 870%;
+    left: 5%;
+    padding-bottom: 15%;
+    color: #1d1e20b3;
+}
+.rg21{
+    position: absolute;
+    top: 870%;
+    right: 25%;
+    display: flex;
+    color: #1d1e20b3;
+}
+.rg21 > p {
+    padding-right: 40px;
+    cursor: pointer;
+}
